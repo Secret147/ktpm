@@ -1,0 +1,147 @@
+[
+    {
+      "id": 1,
+      "name": "Đắc Nhân Tâm",
+      "title": "Dale Carnegie",
+      "year": 2004,
+      "image": "https://isachhay.net/wp-content/uploads/2017/08/sach-hay-dac-nhan-tam.jpg",
+      "description": "Đắc Nhân Tâm (How to Win Friends and Influence People) được mệnh danh là quyển sách hay nhất, nổi tiếng nhất, bán chạy nhất và nó có tầm ảnh hưởng đi xa nhất mọi thời đại, Đắc Nhân Tâm của soạn giả Dale Carnegie là 1 quyển sách hay nên đọc để bạn biết về nghệ thuật thu phục lòng người và làm tất cả mọi người phải yêu mến mình.",
+      "language": "English"
+    },
+    {
+      "id":2,
+      "name": "Nhà giả kim",
+      "title": "Paulo Coelho",
+      "year": 2005,
+      "image": "https://isachhay.net/wp-content/uploads/2017/08/sach-hay-nha-gia-kim.jpg",
+      "description": "Nhà giả kim (The Alchemist) của Paulo Coelho là một cuốn sách hay dành cho những người đã đánh mất đi ước mơ hoặc chưa bao giờ có nó. Nếu bạn đang cần tìm những cuốn sách nên đọc để thành công thì Nhà Giả Kim rất xứng đáng. Thành công như thế nào: thành công trong trong suy nghĩ và hành động.",
+      "language": "Vietnamese"
+    },
+    {
+      "id":3 ,
+      "name": "Tội Ác Và Hình Phạt",
+      "title": "Fyodor Dostoevsky",
+      "year": 2007,
+      "image": "https://isachhay.net/wp-content/uploads/2017/08/sach-hay-toi-ac-va-hinh-phat.jpg",
+      "description": "Tội Ác Và Hình Phạt – Cuốn sách này nằm trong khá nhiều danh sách “những cuốn sách hàng đầu nên đọc trong suốt cuộc đời của bạn“. Và, sau khi cuốn sách này bị lãng quên trên giá sách của tôi trong một thời gian dài (tôi thực sự sở hữu nó trên Kindle, vì vậy về mặt kỹ thuật, tôi sở hữu hai bản), tôi đã đọc nó.",
+      "language": "Vietnamese"
+    },
+    {
+      "id":4 ,
+      "name": "Tuổi Trẻ Đáng Giá Bao Nhiêu?",
+      "title": "Rosie Nguyễn",
+      "year": 2012,
+      "image": "https://isachhay.net/wp-content/uploads/2017/08/sach-hay-tuoi-tre-dang-gia-bao-nhieu.jpg",
+      "description": "“Bạn hối tiếc vì không nắm bắt lấy một cơ hội nào đó, chẳng có ai phải mất ngủ.",
+      "language": "Vietnamese"
+    },
+    {
+      "id": 5,
+      "name": "Đời thay đổi khi chúng ta thay đổi",
+      "title": "Andrew Matthews",
+      "year": 2009,
+      "image": "https://isachhay.net/wp-content/uploads/2017/08/sach-hay-doi-thay-doi-khi-chung-ta-thay-doi.jpg",
+      "description": "“Đời thay đổi khi chúng ta thay đổi” (Being A Happy Teenager) đem lại cho độc giả những tình huống vô cùng thực tế, thậm chí là các câu chuyện vừa “nhỏ nhặt” lại vừa “quan trọng” với cách ứng xử khôn ngoan, thú vị và hài hước… Đồng thời, độc giả như bắt gặp chính mình trong đó, có những cạnh tranh, thất bại, và có những tình huống giao tiếp vừa chân thật lại vừa bổ ích.",
+      "language": "Vietnamese"
+    },
+    {
+      "id":6 ,
+      "name": "Dạy Con Làm Giàu",
+      "title": "Robert Kiyosaki",
+      "year": 2015,
+      "image": "https://isachhay.net/wp-content/uploads/2017/08/sach-hay-day-con-lam-giau.jpg",
+      "description": "Cuốn sách dạy con: Cách suy nghĩ về đồng tiền sẽ quyết định tương lai và sự giàu có của bạn.",
+      "language": "Vietnamese"
+    },
+    {
+      "id": 7,
+      "name": "Những Tấm Lòng Cao Cả",
+      "title": "Edmondo De Amicis",
+      "year": 2007,
+      "image": "https://isachhay.net/wp-content/uploads/2017/08/sach-hay-nhung-tam-long-cao-ca.jpg",
+      "description": "Cuốn sách này có có tên tiếng Anh là “Heart” của nhà văn nổi tiếng người Ý – Edmondo De Amicis. Tôi biết tới quyển sách văn học này qua những câu chuyện được trích trong sách giáo khoa tiểu học – những bài học nhỏ nhưng cực kỳ ý nghĩa. Điều này thôi thúc tôi (lúc đã lớn) lại chọn tìm và đọc trọn vẹn nó thêm một lần nữa, cảm nhận rõ ràng những gì mà tác giả Edmondo De Amicis muốn gửi đến đọc giả.",
+      "language": "Vietnamese"
+    },
+    {
+      "id":8 ,
+      "name": "Nhà Lãnh Đạo không Chức Danh",
+      "title": "Robin Sharma",
+      "year": 2016,
+      "image": "https://isachhay.net/wp-content/uploads/2017/08/sach-hay-nha-lanh-dao-khong-chuc-danh.jpg",
+      "description": "Cho dù bạn làm gì trong tổ chức và cuộc sống hiện nay của bạn như thế nào, một thực tế quan trọng duy nhất là bạn hoàn toàn có khả năng thể hiện năng lực để làm lãnh đạo. Cho dù sự nghiệp hiện nay của bạn đang ở đâu, bạn vẫn luôn cần thể hiện các khả năng tột đỉnh của mình. Cuốn sách này sẽ hướng dẫn bạn làm thế nào để khai thác tối đa khả năng trong chính bạn, cũng như thay đổi cuộc sống và thế giới ở quanh bạn.",
+      "language": "Vietnamese"
+    },
+    {
+      "id":9 ,
+      "name": "Cho tôi xin 1 vé đi tuổi thơ",
+      "title": "Nguyễn Nhật Ánh",
+      "year": 2011,
+      "image": "https://isachhay.net/wp-content/uploads/2017/08/sach-hay-cho-toi-xin-mot-ve-di-tuoi-tho.jpg",
+      "description": "Với cuốn “Cho tôi xin một vé đi tuổi thơ” của Nguyễn Nhật Ánh đã thổi hồn vào những nhân vật xuyên suốt trong câu chuyện của mình. Từ cậu cu Mùi muốn tập tành làm “nhà cách mạng tí hon”, có trí mường tượng phong phú luôn muốn thay đổi tất cả những điều tất yếu và nhàm chán trong cuộc sống thường ngày đến các triết lí nghe có lúc ngô nghê, đôi khi lại đầy sâu sắc của những đứa trẻ chưa đi hết một phần 8 cuộc đời.",
+      "language": "Vietnamese"
+    },
+    {
+      "id":10 ,
+      "name": "Harry Potter",
+      "title": "J. K. Rowling",
+      "year": 2008,
+      "image": "https://isachhay.net/wp-content/uploads/2017/08/sach-hay-phieu-luu-harry-potter.jpg",
+      "description": "Bộ truyện dài 7 tập “Harry Potter” là tác phẩm đáng tự hào nhất, nổi tiếng nhất đồng thời cũng là tác phẩm mang lại danh tiếng cho sự nghiệp văn chương của nữ tác giả người Anh J. K. Rowling.",
+      "language": "Vietnamese"
+    },
+    {
+      "id": 11,
+      "name": "Người bán hàng vĩ đại nhất thế giới",
+      "title": "Og Mandino",
+      "year": 2005,
+      "image": "https://isachhay.net/wp-content/uploads/2017/08/sach-hay-nguoi-ban-hang-vi-dai-nhat-the-gioi.jpg",
+      "description": "“Người bán hàng vĩ đại nhất thế giới” (The Greatest Salesman in the World) là một cuốn sách về Marketing, được viết bởi Og Mandino, phục vụ như một hướng dẫn cho một triết lý về bán hàng, và thành công, kể câu chuyện về Hafid, một cậu bé lạc đà nghèo khổ, đạt được một cuộc sống phong phú.",
+      "language": "Vietnamese"
+    },
+    {
+      "id":12 ,
+      "name": "Đừng Bao Giờ Bỏ Cuộc",
+      "title": "Trump",
+      "year": 2015,
+      "image": "https://isachhay.net/wp-content/uploads/2018/05/Trump-dung-bao-gio-bo-cuoc-sach-kinh-doanh-hay-300x300.jpg",
+      "description": "Khi đọc xong chỉ muốn tìm đọc tiếp sách của ông này. Có thể nói ngôn từ, câu cú mạch lạc, dễ hiểu và đi thẳng vào trọng tâm đã trở thành thương hiệu của Trump.",
+      "language": "Vietnamese"
+    },
+    {
+      "id":13 ,
+      "name": "Đừng Bao Giờ Đi Ăn Một Mình",
+      "title": "Keith Ferrazzi",
+      "year": 2020,
+      "image": "https://isachhay.net/wp-content/uploads/2018/12/dung-bao-gio-di-an-mot-minh-pdf.jpg",
+      "description": "Bạn mong muốn đi tắt đón đầu? Bạn muốn vững bước đến thành công? Công thức để làm được điều này, theo lời bậc thầy về kết nối là Keith Ferrazzi, chính là phải biết làm quen với mọi người. Ferrazzi đã khám phá từ khi còn trẻ rằng điểm đặc biệt của những người thành công thẫm mỹ chính là cách họ vận dụng quyền năng của những mối quan hệ giao tiếp – để mọi người cùng thắng.",
+      "language": "Vietnamese"
+    },
+    {
+      "id": 14,
+      "name": "Bắt Trẻ Đồng Xanh",
+      "title": "J.D.Salinger",
+      "year": 2004,
+      "image": "https://isachhay.net/wp-content/uploads/2017/08/sach-hay-bat-tre-dong-xanh.jpg",
+      "description": "Bắt Trẻ Đồng Xanh (tên tiếng Anh là: “The Catcher in the Rye”) là cuốn tiểu thuyết của nhà văn nổi tiếng người Mỹ J.D.Salinger. Tác phẩm nói lại câu chuyện của nhân vật chính, Holden Caulfield, trong những mốc thời gian cậu ở thành phố New York sau khi bị đuổi học khỏi trường dự bị đại học Pencey Prep.",
+      "language": "Vietnamese"
+    },
+    {
+      "id": 15,
+      "name": "Ông Già Và Biển Cả",
+      "title": "Hemingway",
+      "year": 2017,
+      "image": "https://isachhay.net/wp-content/uploads/2017/08/sach-hay-ong-gia-va-bien-ca.jpg",
+      "description": "Ông già và Biển cả (The Old Man and the Sea) là truyện ngắn dạng viễn tưởng cuối cùng được viết bởi Hemingway. Đây cũng là tác phẩm nổi danh và là 1 trong các đỉnh cao trong sự nghiệp sáng tác của nhà văn. Tác phẩm này đoạt giải Pulitzer cho tác phẩm hư cấu năm 1953.",
+      "language": "Vietnamese"
+    },
+    {
+      "id":16,
+      "name": "Tỷ Phú Bán Giày",
+      "title": "Tony Hsieh",
+      "year": 2018,
+      "image": "https://isachhay.net/wp-content/uploads/2017/08/sach-hay-ty-phu-ban-giay.jpg",
+      "description": "Tỷ Phú Bán Giày (Delivering Happiness) – Một cuốn sách bán chạy nhất trên trang Amazon, xếp thứ 1 trong các sách về Dịch vụ khách hàng; xếp thứ 5 trong những cuốn sách hay về Marketing và Bán hàng; và xếp thứ 7 trong những cuốn sách nói về Quản lý. Cuốn sách là 1 câu chuyện về một công ty thành công, trong ấy, Tony Hseih chia sẻ các bài học marketing khác nhau mà ông đã học được trong cuộc đời, từ một quầy bán nước chanh và cửa hàng bán pizza cho tới LinkExchange, Zappos.",
+      "language": "Vietnamese"
+    }
+  ]
+  

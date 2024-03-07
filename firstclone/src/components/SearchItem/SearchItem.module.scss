@@ -1,0 +1,64 @@
+.wrapper {
+    &:hover {
+        background-color: #f8f8f8;
+    }
+
+    border-bottom: 1px solid #ddd;
+    user-select: none;
+}
+.main {
+    display: flex;
+    padding: 4px 0 4px 0;
+}
+.edit {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    background-color: var(--primary);
+    color: white;
+    padding: 0px 8px 0px 8px;
+    border-radius: var(--border-task);
+    user-select: none;
+    margin: 16px 8px 16px 0;
+    width: 100px;
+    height: 26px;
+    p {
+        margin-left: 8px;
+        padding: 0;
+    }
+    &:hover {
+        background-color: var(--primarytwo);
+    }
+}
+.img {
+    img {
+        width: 70%;
+        height: 100%;
+    }
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+}
+.name {
+    p {
+        display: inline;
+        font-size: 1.4rem;
+        color: black;
+        font-weight: 500;
+    }
+}
+.price {
+    p {
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: red;
+    }
+}

@@ -1,0 +1,190 @@
+.wrapper {
+    width: 100%;
+}
+.main {
+}
+.header {
+    width: 100%;
+    border-bottom: 2px solid var(--primary);
+    margin-top: var(--marginad);
+    position: relative;
+}
+.header_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 12px 12px 12px;
+    p {
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+}
+.add_account_main {
+    margin: 16px;
+}
+.add_account {
+    width: 100%;
+
+    border: 1px solid var(--primary);
+    z-index: 1;
+    position: absolute;
+    top: 58px;
+    background-color: white;
+    border-bottom-left-radius: var(--border-task);
+    border-bottom-right-radius: var(--border-task);
+    border-top: none;
+}
+.add_account_main {
+    display: flex;
+    flex-wrap: wrap;
+}
+.add_item {
+    margin: 16px 32px 0 36px;
+    p {
+        font-size: 1.8rem;
+        margin-bottom: 4px;
+    }
+    input {
+        font-size: 1.6rem;
+        padding: 8px 0 8px 8px;
+        border-radius: 4px;
+        border: 2px solid gray;
+    }
+}
+.button {
+    display: flex;
+    margin: 24px 0 32px 52px;
+}
+.accept {
+    width: 18%;
+    margin-right: 8px;
+}
+.accept2 {
+    width: 10%;
+}
+.add {
+    width: 30%;
+}
+.container_main {
+    margin-top: 16px;
+    overflow-y: auto;
+    height: 600px;
+    margin-left: 20px;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primarybackgroundtwo);
+}
+.edit {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    background-color: var(--primary);
+    color: white;
+    padding: 0px 8px 0px 8px;
+    border-radius: var(--border-task);
+    user-select: none;
+    margin: 16px 8px 16px 0;
+    p {
+        margin-left: 8px;
+        padding: 0;
+    }
+    &:hover {
+        background-color: var(--primarytwo);
+    }
+}
+.product_item {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-right: 32px;
+    padding: 8px 0 8px 0;
+}
+.product_item:last-child {
+    border-bottom: none;
+}
+.img {
+    width: 10%;
+    img {
+        width: 48%;
+        height: 100%;
+    }
+}
+.name {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+
+    p {
+        display: inline-block;
+        font-size: 2rem;
+        margin: 0;
+    }
+    .name_product {
+        margin-right: 6px;
+    }
+}
+.price {
+    display: flex;
+    align-items: center;
+
+    width: 20%;
+    font-weight: 700;
+    color: red;
+    p {
+        margin: 0;
+        font-size: 2.4rem;
+    }
+}
+.quantity {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    p {
+        margin: 0;
+    }
+}
+@media (max-width: 1000px) {
+    .img {
+        width: 10%;
+        img {
+            width: 40px;
+            height: 60px;
+        }
+    }
+    .name {
+        width: 300px;
+        flex-wrap: wrap;
+    }
+    .price {
+        width: 150px;
+    }
+    .product_item {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 350px) {
+    .header_main {
+        p {
+            font-size: 1.6rem;
+        }
+    }
+}
