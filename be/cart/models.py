@@ -8,7 +8,7 @@ from customer.models import Customer
 # Create your models here.b
 class Cart(models.Model):
     total = models.PositiveIntegerField(verbose_name="Total")
-    book_id = models.IntegerField()
+    book_id = models.IntegerField(null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     update_at = models.DateTimeField(auto_now=True)
     order = models.ForeignKey(Order, on_delete=models.CASCADE, null=True)

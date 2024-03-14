@@ -10,7 +10,7 @@ from .models import Cart
 
 
 class CartSerializer(serializers.ModelSerializer):
-    book_id = serializers.IntegerField()
+    book_id = serializers.IntegerField(allow_null=True)
     order = serializers.PrimaryKeyRelatedField(
         queryset=Order.objects.all(), allow_null=True
     )

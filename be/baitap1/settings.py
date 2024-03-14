@@ -54,6 +54,8 @@ INSTALLED_APPS = [
     "payment",
     "publishher",
     "shipment",
+    "mobiles",
+    "clothes",
 ]
 
 MIDDLEWARE = [
@@ -95,7 +97,7 @@ WSGI_APPLICATION = "baitap1.wsgi.application"
 DATABASES = {
     "mongo": {
         "ENGINE": "djongo",
-        "NAME": "testDB",
+        "NAME": "testD",
         "ENFORCE_SCHEMA": False,
         "CLIENT": {
             "host": "mongodb://localhost:27017/",

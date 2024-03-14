@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "name": "Điện thoại iPhone 11",
+      "type": "(128GB) - Chính hãng VN/A",
+      "image": "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/10/18/iphone-11-white-2-up-vertical-us-en-screen-1.png",
+      "description": "iPhone 11 - siêu phẩm được mong chờ nhất năm 2019 của Apple chuẩn bị ra mắt. Với những cải tiến vượt trội, phiên bản iPhone mới nhất hứa hẹn sẽ làm bùng nổ thị trường công nghệ.",
+      "producer": "Apple"
+    },
+    {
+        "id": 2,
+        "name": "Điện thoại iPhone 15 Pro Max",
+        "type": "(256GB) - Chính hãng VN/A",
+        "image": "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/09/13/iphone-15-pro-max-natural-titanium-pure-back-iphone-15-pro-max-natural-titanium-pure-front-2up-screen-usen-1.png",
+        "description": "iPhone 15 Pro Max đem đến cho người dùng đa dạng sự lựa chọn với ba phiên bản bộ nhớ trong lần lượt là 256GB/512GB/1TB và bốn lựa chọn màu gồm Titan Tự Nhiên/Titan Trắng/Titan Xanh/Titan Đen. Ngoài việc sử dụng chất liệu Titan mới, những cải tiến về cấu hình được Apple cập nhật và trang bị hứa hẹn đem đến trải nghiệm người dùng nâng cao hơn.",
+        "producer": "Apple"
+      },
+      {
+        "id": 3,
+        "name": "Điện thoại iPhone 12",
+        "type": "(64GB) - Chính hãng VN/A",
+        "image": "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/07/18/iphone-12-finish-select-202207-green-removebg-preview.png",
+        "description": "Nhắc tới Apple, người dùng sẽ luôn nghĩ tới những thiết bị iPhone đẳng cấp, mang trên mình một thiết kế vô cùng sang trọng, hiện đại và thời thượng. Và iPhone 12 Series của năm nay cũng không phải là một ngoại lệ. Mẫu iPhone 12 64GB sở hữu một thiết kế đã được “lột xác” hoàn toàn so với các thế hệ tiền nhiệm trước đây với cạnh được vát phẳng, vuông thành sắc cạnh, mang tới một cảm giác cực kì bền bỉ và chắc chắn. Thiết kế này khiến cho người dùng có thể dễ dàng liên tưởng tới những mẫu iPhone huyền thoại trước đây đã làm nên tên tuổi của Apple như iPhone 4 hoặc iPhone 5.",
+        "producer": "Apple"
+      },
+      {
+        "id": 4,
+        "name": "Điện thoại iPhone 13",
+        "type": "(128GB) - Chính hãng VN/A",
+        "image": "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/09/13/iphone-15-pink-pure-back-iphone-15-pink-pure-front-2up-screen-usen.png",
+        "description": "Với những cải tiến không ngừng nghỉ cho những sản phẩm điện thoại thông minh của mình, Apple là hãng smartphone luôn nhận được sự tin tưởng từ người tiêu dùng Việt Nam. Dòng sản phẩm iPhone 13 được ra mắt gần đây với màu sắc mới và nâng cấp đáng kể về phần cứng của điện thoại đang nhận được rất nhiều sự quan tâm từ người hâm mộ.   ",
+        "producer": "Apple"
+      },
+      {
+        "id": 5,
+        "name": "Điện thoại iPhone 15 Plus",
+        "type": "(128GB) - Chính hãng VN/A",
+        "image": "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/09/13/iphone-15-plus-blue-pure-back-iphone-15-plus-blue-pure-front-2up-screen-usen.png",
+        "description": "Vẫn là thiết kế vuông vắn hiện đại giống như những thế hệ tiền nhiệm, phiên bản iPhone 15 Plus là một lựa chọn hoàn hảo cho người dùng khi vừa vặn về kích thước cũng như hầu bao, không quá nhỏ như iPhone 15 hay giá quá cao như iPhone 15 Pro Max. Bên cạnh đó là 3 phiên bản bộ nhớ trong lần lượt là 128GB/256GB/512GB đem đến sự lựa chọn đa dạng cho người dùng iPhone.",
+        "producer": "Apple"
+      },
+      {
+        "id": 6,
+        "name": "Điện thoại iPhone 14 Plus",
+        "type": "(256GB) - Chính hãng VN/A",
+        "image": "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/07/18/14plus-removebg-preview.png",
+        "description": "iPhone 14 Plus là phiên bản thay thế mini trong thế hệ iPhone 14 Series, vốn được Apple giới thiệu trên thế hệ iPhone 12 và 13 series, nhằm tránh nhầm lẫn với dòng Pro Max. Đây là phiên bản giá rẻ hơn của iPhone 14 Pro Max, với thiết kế tinh tế với những nâng cấp ấn tượng về camera và khả năng an toàn mới mang tính đột phá",
+        "producer": "Apple"
+      }
+  ]
+  
