@@ -5,7 +5,7 @@ from order.models import Order
 from customer.models import Customer
 
 
-# Create your models here.b
+
 class Cart(models.Model):
     total = models.PositiveIntegerField(verbose_name="Total")
     book_id = models.IntegerField(null=True)
@@ -16,4 +16,4 @@ class Cart(models.Model):
 
     class Meta:
         __tablename__ = "Cart"
-        # ordering = ['created_at'] -> sorting
+        
