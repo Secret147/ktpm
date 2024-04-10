@@ -32,9 +32,9 @@ class ListCartView(APIView):
 
     def post(self, request):
         serializer = CartSerializer(data=request.data)
-      
+
         if serializer.is_valid():
-            
+
             serializer.save()
             return Response(
                 {"message": "Create a new cart successfully"},
@@ -42,28 +42,9 @@ class ListCartView(APIView):
             )
         else:
             return Response(
-                serializer.errors,  
+                serializer.errors,
                 status=status.HTTP_400_BAD_REQUEST,
             )
-
-
-# # Create your views here.
-# def carts(request):
-#     carts = Cart.objects.all().values()
-#     template = loader.get_template("cart.html")
-#     context = {
-#         "carts": carts,
-#     }
-#     return HttpResponse(template.render(context, request))
-
-
-# def details(request, id):
-#     cart = Cart.objects.get(id=id)
-#     template = loader.get_template("detail.html")
-#     context = {
-#         "cart": cart,
-#     }
-#     return HttpResponse(template.render(context, request))
 
 
 class DetailCart(APIView):
@@ -76,7 +57,16 @@ class DetailCart(APIView):
             return Response(
                 {"message": "Cart not found"}, status=status.HTTP_404_NOT_FOUND
             )
-        
+
+    def put(self, request, id):
+
+        cart = Cart.objects.using("mongo").get(id=id)
+        serializer = CartSerializer(cart, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
     def get(self, request, id):
         try:
             cart = Cart.objects.get(id=id)

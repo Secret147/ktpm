@@ -1,5 +1,6 @@
 # Create your views here.
 
+from ast import parse
 from urllib import request, response
 from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponse
@@ -15,6 +16,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import generics
 from django.db.models import Q
+from django.db import connections
 
 
 class ListBookView(APIView):
@@ -25,16 +27,18 @@ class ListBookView(APIView):
 
         return Response(serializer.data)
 
-    def post(self, request):
-        serializer = BookSerializer(data=request.data)
+    def post(self, request, format=None):
+        book = Book.objects.using("mongo").create()
+        serializer = BookSerializer(book, data=request.data)
         if serializer.is_valid():
+
             serializer.save()
-            return JsonResponse(
+            return Response(
                 {"message": "Create a new book successfully"},
                 status=status.HTTP_201_CREATED,
             )
         else:
-            return JsonResponse(
+            return Response(
                 {"message": "Create a new book unsuccessfully"},
                 status=status.HTTP_400_BAD_REQUEST,
             )
@@ -69,6 +73,15 @@ class DetailCart(APIView):
             return Response(
                 {"message": "Cart not found"}, status=status.HTTP_404_NOT_FOUND
             )
+
+    def put(self, request, id):
+
+        book = Book.objects.using("mongo").get(id=id)
+        serializer = BookSerializer(book, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def get(self, request, id):
         try:

@@ -3,9 +3,6 @@ import clothes.views as views
 
 
 urlpatterns = [
-    path("", views.ListBookView.as_view(), name="API to get list of book"),
-    # path("<int:id>", views.DetailCart.as_view(), name="API to get list of book"),
-    # # path("search/", views.UserViewSet.as_view(), name="mymodel-search"),
-    # # path("se/", views.BookSearchAPIView.as_view(), name="book-search"),
-    # path('search/', views.UserViewSet.as_view(), name='book-list'),
+    path("", views.ListClothesView.as_view(), name="API to get list of book"),
+    path("<int:id>", views.DetailClothes.as_view(), name="API to update clothes"),
 ]

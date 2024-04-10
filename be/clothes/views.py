@@ -18,10 +18,64 @@ from django.db.models import Q
 
 
 # Create your views here.
-class ListBookView(APIView):
+class ListClothesView(APIView):
 
     def get(self, request, format=None):
-        books = Clothes.objects.using("mongo").all()
-        serializer = ClothesSerializer(books, many=True)
+        clothes = Clothes.objects.using("mongo").all()
+        serializer = ClothesSerializer(clothes, many=True)
 
         return Response(serializer.data)
+
+    def post(self, request):
+        clothes = Clothes.objects.using("mongo").create()
+        serializer = ClothesSerializer(clothes, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return JsonResponse(
+                {"message": "Create a new Clothes successfully"},
+                status=status.HTTP_201_CREATED,
+            )
+        else:
+            return JsonResponse(
+                {"message": "Create a new Clothes unsuccessfully"},
+                status=status.HTTP_400_BAD_REQUEST,
+            )
+
+    def delete(self, request, id):
+        try:
+            clothes = Clothes.objects.get(id=id)
+            clothes.delete()
+            return Response("Delete Success")
+        except Clothes.DoesNotExist:
+            return Response({"message": "Not found"}, status=status.HTTP_404_NOT_FOUND)
+
+
+class DetailClothes(APIView):
+    def delete(self, request, id):
+        try:
+            clothes = Clothes.objects.get(id=id)
+            clothes.delete()
+            return Response("Delete Success")
+        except Clothes.DoesNotExist:
+            return Response(
+                {"message": "Cart not found"}, status=status.HTTP_404_NOT_FOUND
+            )
+
+    def put(self, request, id):
+
+        clothes = Clothes.objects.using("mongo").get(id=id)
+        serializer = ClothesSerializer(clothes, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def get(self, request, id):
+        try:
+            clothes = Clothes.objects.using("mongo").get(id=id)
+            serializer = ClothesSerializer(clothes)
+            return Response(serializer.data)
+        except Clothes.DoesNotExist:
+            return Response(
+                {"message": "Cart not found"}, status=status.HTTP_404_NOT_FOUND
+            )

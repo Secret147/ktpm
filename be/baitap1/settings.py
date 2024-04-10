@@ -103,13 +103,21 @@ DATABASES = {
             "host": "mongodb://localhost:27017/",
         },
     },
-    "default": {
+    "mysql": {
         "ENGINE": "django.db.backends.mysql",
         "NAME": "django",
         "USER": "root",
         "PASSWORD": "123456",
         "HOST": "localhost",
         "PORT": "3306",
+    },
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "django",
+        "USER": "postgres",
+        "PASSWORD": "123456",
+        "HOST": "localhost",
+        "PORT": "5432",
     },
 }
 
