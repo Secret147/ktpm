@@ -41,19 +41,11 @@ class ListClothesView(APIView):
                 status=status.HTTP_400_BAD_REQUEST,
             )
 
-    def delete(self, request, id):
-        try:
-            clothes = Clothes.objects.get(id=id)
-            clothes.delete()
-            return Response("Delete Success")
-        except Clothes.DoesNotExist:
-            return Response({"message": "Not found"}, status=status.HTTP_404_NOT_FOUND)
-
 
 class DetailClothes(APIView):
     def delete(self, request, id):
         try:
-            clothes = Clothes.objects.get(id=id)
+            clothes = Clothes.objects.using("mongo").get(id=id)
             clothes.delete()
             return Response("Delete Success")
         except Clothes.DoesNotExist:
@@ -78,4 +70,25 @@ class DetailClothes(APIView):
         except Clothes.DoesNotExist:
             return Response(
                 {"message": "Cart not found"}, status=status.HTTP_404_NOT_FOUND
+            )
+
+
+class CreateClothes(APIView):
+    def post(self, request):
+        mobile_list = request.data  # Assume request.data is a list of mobile objects
+        mobile_objects = [
+            Clothes.objects.using("mongo").create(**mobile_data)
+            for mobile_data in mobile_list
+        ]
+
+        try:
+            Clothes.objects.using("mongo").bulk_create(mobile_objects)
+            return JsonResponse(
+                {"message": "Create new mobiles successfully"},
+                status=status.HTTP_201_CREATED,
+            )
+        except Exception as e:
+            return JsonResponse(
+                {"message": f"Create new mobiles unsuccessfully: {str(e)}"},
+                status=status.HTTP_400_BAD_REQUEST,
             )

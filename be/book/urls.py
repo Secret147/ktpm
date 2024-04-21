@@ -7,4 +7,5 @@ urlpatterns = [
     path("", views.ListBookView.as_view(), name="API to get list of book"),
     path("search/", views.UserViewSet.as_view(), name="book-list"),
     path("<int:id>", views.DetailCart.as_view(), name="API to update person"),
+    path("create/", views.CreateBook.as_view(), name="API to update mobile"),
 ]

@@ -1,0 +1,79 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.main_form {
+    width: 50%;
+    border: 1px solid #ddd;
+    margin: 32px 0 32px 0;
+    border-radius: var(--border-task);
+    background-color: white;
+}
+.header {
+    font-size: 2.4rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 16px 0 16px 0;
+}
+.container {
+}
+.container_item {
+}
+.container_main {
+    margin: 16px;
+}
+.header_item {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+.main_item {
+    input {
+        font-size: 1.8rem;
+        padding: 8px 0 8px 16px;
+        width: 100%;
+        margin-bottom: 16px;
+        border-radius: var(--border-task);
+        border: 1px solid #ddd;
+    }
+    span {
+        font-size: 1.8rem;
+        margin-right: 60px;
+    }
+}
+.check {
+    width: 12px !important;
+    height: 11px;
+    margin-right: 8px;
+}
+.checkbox {
+    display: flex;
+    justify-content: center;
+}
+.checkbox_main {
+    font-size: 1.8rem;
+    margin-left: 16px;
+    width: 80%;
+    span {
+        margin-left: 8px;
+    }
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}

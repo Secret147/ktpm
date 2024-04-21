@@ -66,12 +66,12 @@ class UserViewSet(generics.ListAPIView):
 class DetailCart(APIView):
     def delete(self, request, id):
         try:
-            book = Book.objects.get(id=id)
+            book = Book.objects.using("mongo").get(id=id)
             book.delete()
             return Response("Delete Success")
         except Book.DoesNotExist:
             return Response(
-                {"message": "Cart not found"}, status=status.HTTP_404_NOT_FOUND
+                {"message": "Book not found"}, status=status.HTTP_404_NOT_FOUND
             )
 
     def put(self, request, id):
@@ -96,3 +96,24 @@ class DetailCart(APIView):
 
 class BookSearchAPIView(generics.ListAPIView):
     serializer_class = BookSerializer
+
+
+class CreateBook(APIView):
+    def post(self, request):
+        mobile_list = request.data  # Assume request.data is a list of mobile objects
+        mobile_objects = [
+            Book.objects.using("mongo").create(**mobile_data)
+            for mobile_data in mobile_list
+        ]
+
+        try:
+            Book.objects.using("mongo").bulk_create(mobile_objects)
+            return JsonResponse(
+                {"message": "Create new mobiles successfully"},
+                status=status.HTTP_201_CREATED,
+            )
+        except Exception as e:
+            return JsonResponse(
+                {"message": f"Create new mobiles unsuccessfully: {str(e)}"},
+                status=status.HTTP_400_BAD_REQUEST,
+            )

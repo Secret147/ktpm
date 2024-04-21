@@ -18,7 +18,7 @@ from django.db.models import Q
 
 
 # Create your views here.
-class ListBookView(APIView):
+class ListMobileView(APIView):
 
     def get(self, request, format=None):
         mobiles = Mobile.objects.using("mongo").all()
@@ -27,8 +27,8 @@ class ListBookView(APIView):
         return Response(serializer.data)
 
     def post(self, request):
-        book = Mobile.objects.using("mongo").create()
-        serializer = MobileSerializer(book, data=request.data)
+        mobile = Mobile.objects.using("mongo").create()
+        serializer = MobileSerializer(mobile, data=request.data)
         if serializer.is_valid():
             serializer.save()
             return JsonResponse(
@@ -41,24 +41,17 @@ class ListBookView(APIView):
                 status=status.HTTP_400_BAD_REQUEST,
             )
 
+
+class DetailMobile(APIView):
+
     def delete(self, request, id):
         try:
-            mobile = Mobile.objects.get(id=id)
+            mobile = Mobile.objects.using("mongo").get(id=id)
             mobile.delete()
             return Response("Delete Success")
         except Mobile.DoesNotExist:
-            return Response({"message": "Not found"}, status=status.HTTP_404_NOT_FOUND)
-
-
-class DetailMobile(APIView):
-    def delete(self, request, id):
-        try:
-            mobile = Mobile.objects.get(id=id)
-            mobile.delete()
-            return Response("Delete Success")
-        except mobile.DoesNotExist:
             return Response(
-                {"message": "Cart not found"}, status=status.HTTP_404_NOT_FOUND
+                {"message": "Mobile not found"}, status=status.HTTP_404_NOT_FOUND
             )
 
     def put(self, request, id):
@@ -78,4 +71,25 @@ class DetailMobile(APIView):
         except mobile.DoesNotExist:
             return Response(
                 {"message": "Cart not found"}, status=status.HTTP_404_NOT_FOUND
+            )
+
+
+class CreateMobile(APIView):
+    def post(self, request):
+        mobile_list = request.data
+        mobile_objects = [
+            Mobile.objects.using("mongo").create(**mobile_data)
+            for mobile_data in mobile_list
+        ]
+
+        try:
+            Mobile.objects.using("mongo").bulk_create(mobile_objects)
+            return JsonResponse(
+                {"message": "Create new mobiles successfully"},
+                status=status.HTTP_201_CREATED,
+            )
+        except Exception as e:
+            return JsonResponse(
+                {"message": f"Create new mobiles unsuccessfully: {str(e)}"},
+                status=status.HTTP_400_BAD_REQUEST,
             )

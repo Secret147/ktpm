@@ -1,0 +1,36 @@
+.main {
+    width: 40%;
+    border: 3px solid var(--primary);
+    border-radius: 8px;
+    background-color: white;
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .header {
+        font-size: 2rem;
+        text-align: center;
+        user-select: none;
+        color: var(--primary);
+        margin-bottom: 16px;
+    }
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(236 249 247);
+}
+.form_main {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

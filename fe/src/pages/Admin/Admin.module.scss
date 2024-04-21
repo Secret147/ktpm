@@ -1,0 +1,137 @@
+.wrapper {
+    width: 70%;
+}
+.main {
+}
+.header {
+    width: 100%;
+    border-bottom: 2px solid var(--primary);
+    margin-top: var(--marginad);
+    position: relative;
+}
+container_main {
+    margin-top: 16px;
+    overflow-y: auto;
+    height: 511px;
+}
+.header_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    p {
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+}
+.add_account_main {
+    margin: 16px;
+}
+.add_account {
+    width: 100%;
+
+    border: 1px solid var(--primary);
+    z-index: 1;
+    position: absolute;
+    top: 58px;
+    background-color: white;
+    border-bottom-left-radius: var(--border-task);
+    border-bottom-right-radius: var(--border-task);
+    border-top: none;
+}
+.add_account_main {
+    display: flex;
+    flex-wrap: wrap;
+}
+.add_item {
+    margin: 16px 32px 0 36px;
+    p {
+        font-size: 1.8rem;
+        margin-bottom: 4px;
+    }
+    input {
+        font-size: 1.6rem;
+        padding: 8px 0 8px 8px;
+        border-radius: 4px;
+        border: 2px solid gray;
+    }
+}
+.button {
+    display: flex;
+    margin: 24px 0 32px 52px;
+}
+.accept {
+    width: 18%;
+    margin-right: 8px;
+}
+.accept2 {
+    width: 10%;
+}
+.add {
+    width: 30%;
+}
+.container_main {
+    margin-top: 16px;
+}
+.container_header_main {
+    display: flex;
+    justify-content: space-between;
+}
+.account_item {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+
+    p {
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+}
+.name {
+    width: 20%;
+}
+.password {
+    width: 50%;
+}
+.role {
+    width: 20%;
+}
+.edit {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    background-color: var(--primary);
+    color: white;
+    padding: 0px 8px 0px 8px;
+    border-radius: var(--border-task);
+    user-select: none;
+    margin: 16px 8px 16px 0;
+    p {
+        margin-left: 8px;
+        padding: 0;
+    }
+    &:hover {
+        background-color: var(--primarytwo);
+    }
+}
+@media (max-width: 1200px) {
+    .password {
+        width: 100px;
+    }
+    .role {
+        width: 100px;
+    }
+    .name {
+        width: 300px;
+    }
+}
+@media (max-width: 950px) {
+    .account_item {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 350px) {
+    .header_main {
+        flex-wrap: wrap;
+    }
+}

@@ -97,13 +97,13 @@ WSGI_APPLICATION = "baitap1.wsgi.application"
 DATABASES = {
     "mongo": {
         "ENGINE": "djongo",
-        "NAME": "testD",
-        "ENFORCE_SCHEMA": False,
+        "NAME": "testDB",
+        "ENFORCE_SCHEMA": True,
         "CLIENT": {
             "host": "mongodb://localhost:27017/",
         },
     },
-    "mysql": {
+    "default": {
         "ENGINE": "django.db.backends.mysql",
         "NAME": "django",
         "USER": "root",
@@ -111,7 +111,7 @@ DATABASES = {
         "HOST": "localhost",
         "PORT": "3306",
     },
-    "default": {
+    "postgresql": {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": "django",
         "USER": "postgres",

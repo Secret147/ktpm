@@ -56,7 +56,7 @@ class MobileViewSet(generics.ListAPIView):
                 query |= Q(name__icontains=keyword)
                 query |= Q(type__icontains=keyword)
                 query |= Q(description__icontains=keyword)
-                query |= Q(producer__icontains=keyword)
+                query |= Q(image__icontains=keyword)
             queryset = queryset.filter(query)
         return queryset
 
@@ -73,7 +73,7 @@ class ClothesViewSet(generics.ListAPIView):
             for keyword in keywords.split():
 
                 query |= Q(name__icontains=keyword)
-                query |= Q(producer__icontains=keyword)
+                query |= Q(image__icontains=keyword)
                 query |= Q(style__icontains=keyword)
                 query |= Q(description__icontains=keyword)
             queryset = queryset.filter(query)

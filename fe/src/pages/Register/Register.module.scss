@@ -1,0 +1,15 @@
+.btn_submit {
+    margin: 16px 0 32px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+}
+.error {
+    margin-top: 4px;
+    p {
+        font-size: 1.8rem;
+        color: red;
+    }
+}

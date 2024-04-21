@@ -1,6 +1,6 @@
 [
     {
-      "id": 1,
+
       "name": "Đắc Nhân Tâm",
       "title": "Dale Carnegie",
       "year": 2004,
@@ -9,7 +9,6 @@
       "language": "English"
     },
     {
-      "id":2,
       "name": "Nhà giả kim",
       "title": "Paulo Coelho",
       "year": 2005,
@@ -18,7 +17,7 @@
       "language": "Vietnamese"
     },
     {
-      "id":3 ,
+
       "name": "Tội Ác Và Hình Phạt",
       "title": "Fyodor Dostoevsky",
       "year": 2007,
@@ -27,7 +26,7 @@
       "language": "Vietnamese"
     },
     {
-      "id":4 ,
+
       "name": "Tuổi Trẻ Đáng Giá Bao Nhiêu?",
       "title": "Rosie Nguyễn",
       "year": 2012,
@@ -36,7 +35,7 @@
       "language": "Vietnamese"
     },
     {
-      "id": 5,
+
       "name": "Đời thay đổi khi chúng ta thay đổi",
       "title": "Andrew Matthews",
       "year": 2009,
@@ -45,7 +44,7 @@
       "language": "Vietnamese"
     },
     {
-      "id":6 ,
+
       "name": "Dạy Con Làm Giàu",
       "title": "Robert Kiyosaki",
       "year": 2015,
@@ -54,7 +53,7 @@
       "language": "Vietnamese"
     },
     {
-      "id": 7,
+
       "name": "Những Tấm Lòng Cao Cả",
       "title": "Edmondo De Amicis",
       "year": 2007,
@@ -63,7 +62,7 @@
       "language": "Vietnamese"
     },
     {
-      "id":8 ,
+
       "name": "Nhà Lãnh Đạo không Chức Danh",
       "title": "Robin Sharma",
       "year": 2016,
@@ -72,7 +71,7 @@
       "language": "Vietnamese"
     },
     {
-      "id":9 ,
+
       "name": "Cho tôi xin 1 vé đi tuổi thơ",
       "title": "Nguyễn Nhật Ánh",
       "year": 2011,
@@ -81,7 +80,7 @@
       "language": "Vietnamese"
     },
     {
-      "id":10 ,
+
       "name": "Harry Potter",
       "title": "J. K. Rowling",
       "year": 2008,
@@ -90,7 +89,7 @@
       "language": "Vietnamese"
     },
     {
-      "id": 11,
+
       "name": "Người bán hàng vĩ đại nhất thế giới",
       "title": "Og Mandino",
       "year": 2005,
@@ -99,7 +98,7 @@
       "language": "Vietnamese"
     },
     {
-      "id":12 ,
+
       "name": "Đừng Bao Giờ Bỏ Cuộc",
       "title": "Trump",
       "year": 2015,
@@ -108,7 +107,7 @@
       "language": "Vietnamese"
     },
     {
-      "id":13 ,
+
       "name": "Đừng Bao Giờ Đi Ăn Một Mình",
       "title": "Keith Ferrazzi",
       "year": 2020,
@@ -117,7 +116,7 @@
       "language": "Vietnamese"
     },
     {
-      "id": 14,
+
       "name": "Bắt Trẻ Đồng Xanh",
       "title": "J.D.Salinger",
       "year": 2004,
@@ -126,7 +125,7 @@
       "language": "Vietnamese"
     },
     {
-      "id": 15,
+
       "name": "Ông Già Và Biển Cả",
       "title": "Hemingway",
       "year": 2017,
@@ -135,7 +134,7 @@
       "language": "Vietnamese"
     },
     {
-      "id":16,
+
       "name": "Tỷ Phú Bán Giày",
       "title": "Tony Hsieh",
       "year": 2018,

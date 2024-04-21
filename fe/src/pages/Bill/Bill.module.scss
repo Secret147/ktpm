@@ -1,0 +1,96 @@
+.wrapper {
+    width: 70%;
+}
+.main {
+}
+.main_item {
+    margin-top: 16px;
+    overflow-y: auto;
+    height: 511px;
+}
+.header {
+    width: 100%;
+    border-bottom: 2px solid var(--primary);
+    margin-top: var(--marginad);
+    position: relative;
+}
+.header_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    p {
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+}
+.item_main {
+    display: flex;
+    border-bottom: 1px solid gray;
+    align-items: center;
+    padding: 16px 0 16px 0;
+}
+.bill_item {
+    p {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    width: 15%;
+}
+.bill_item2 {
+    width: 40%;
+    p {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+}
+.bill_item3 {
+    p {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+    width: 25%;
+}
+.button {
+    width: 30%;
+}
+.add_account_main {
+    margin: 32px 0 0 64px;
+}
+.add_account {
+    width: 100%;
+    border: 1px solid var(--primary);
+    z-index: 1;
+    position: absolute;
+    top: 49px;
+    background-color: white;
+    border-bottom-left-radius: var(--border-task);
+    border-bottom-right-radius: var(--border-task);
+    border-top: none;
+}
+.add_account_main {
+    p {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+}
+.button {
+    float: right;
+    margin: 16px 0 32px 32px;
+}
+@media (max-width: 850px) {
+    .bill_item {
+        width: 100px;
+    }
+    .bill_item2 {
+        width: 200px;
+    }
+    .bill_item3 {
+        width: 200px;
+    }
+    .item_main {
+        flex-wrap: wrap;
+    }
+}

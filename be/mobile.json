@@ -1,6 +1,6 @@
 [
     {
-      "id": 1,
+    
       "name": "Điện thoại iPhone 11",
       "type": "(128GB) - Chính hãng VN/A",
       "image": "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/10/18/iphone-11-white-2-up-vertical-us-en-screen-1.png",
@@ -8,7 +8,7 @@
       "producer": "Apple"
     },
     {
-        "id": 2,
+      
         "name": "Điện thoại iPhone 15 Pro Max",
         "type": "(256GB) - Chính hãng VN/A",
         "image": "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/09/13/iphone-15-pro-max-natural-titanium-pure-back-iphone-15-pro-max-natural-titanium-pure-front-2up-screen-usen-1.png",
@@ -16,7 +16,7 @@
         "producer": "Apple"
       },
       {
-        "id": 3,
+      
         "name": "Điện thoại iPhone 12",
         "type": "(64GB) - Chính hãng VN/A",
         "image": "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/07/18/iphone-12-finish-select-202207-green-removebg-preview.png",
@@ -24,7 +24,7 @@
         "producer": "Apple"
       },
       {
-        "id": 4,
+      
         "name": "Điện thoại iPhone 13",
         "type": "(128GB) - Chính hãng VN/A",
         "image": "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/09/13/iphone-15-pink-pure-back-iphone-15-pink-pure-front-2up-screen-usen.png",
@@ -32,7 +32,7 @@
         "producer": "Apple"
       },
       {
-        "id": 5,
+      
         "name": "Điện thoại iPhone 15 Plus",
         "type": "(128GB) - Chính hãng VN/A",
         "image": "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/09/13/iphone-15-plus-blue-pure-back-iphone-15-plus-blue-pure-front-2up-screen-usen.png",
@@ -40,12 +40,101 @@
         "producer": "Apple"
       },
       {
-        "id": 6,
+      
         "name": "Điện thoại iPhone 14 Plus",
         "type": "(256GB) - Chính hãng VN/A",
         "image": "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/07/18/14plus-removebg-preview.png",
         "description": "iPhone 14 Plus là phiên bản thay thế mini trong thế hệ iPhone 14 Series, vốn được Apple giới thiệu trên thế hệ iPhone 12 và 13 series, nhằm tránh nhầm lẫn với dòng Pro Max. Đây là phiên bản giá rẻ hơn của iPhone 14 Pro Max, với thiết kế tinh tế với những nâng cấp ấn tượng về camera và khả năng an toàn mới mang tính đột phá",
         "producer": "Apple"
+      },
+      {
+      
+        "name": "Điện thoại TECNO SPARK 20 Pro",
+        "type": "(8+8GB/256GB) - Chính hãng",
+        "image": "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2024/03/11/tecno-spark-pro-20-1.jpg",
+        "description": "TECNO SPARK 20 Pro + (8GB/256GB) - Chính hãng là dòng smartphone mới thuộc phân khúc giá rẻ nhưng sở hữu công nghệ không phải dạng vừa. Người dùng sẽ những trải nghiệm tuyệt vời nhất trên màn hình AMOLED 120Hz có độ sắc nét ấn tượng. Mọi khoảnh khắc sẽ được bắt trọn với chất lượng tốt nhất nhờ camera cảm biến 108MP và các công nghệ xử lý hình ảnh vượt trội. Ngoài ra, máy còn sở hữu bộ vi xử lý MediaTek Helio G99 Ultimate mang đến hiệu năng mạnh mẽ. RAM 8GB và bộ nhớ 256GB vừa giúp tăng tốc độ xử lý, cho các thao tác lướt mượt mà, vừa cung cấp kho lưu trữ rộng lớn. Bạn cũng sẽ có trải nghiệm liền mạch cả ngày dài với dung lượng pin 5000mAh ấn tượng.",
+        "producer": "Tecno"
+      },
+      {
+      
+        "name": "Điện thoại OPPO Reno11 F 5G ",
+        "type": "(8GB/256GB) - Chính hãng",
+        "image": "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2024/03/11/oppo-reno11-f.png",
+        "description": "OPPO Reno11 F 5G (8GB/256GB) - Chính hãng nổi bật với màn hình AMOLED kích thước 6,7 inch cùng tần số quét lên đến 120Hz và độ phân giải 2412x1080 px. Bên cạnh đó, điện thoại còn đi kèm với con chip MediaTek Dimensity 7050 và RAM 8GB, giúp xử lý mượt mà các tác vụ. Cụm 3 camera bao gồm các độ phân giải 64MP, 8MP và 2MP, hứa hẹn đem đến cho người dùng những bức hình chất lượng và rõ nét nhất. ",
+        "producer": "Oppo"
+      },
+      {
+      
+        "name": "Điện thoại Samsung Galaxy A55",
+        "type": "8GB/128GB - Chính hãng",
+        "image": "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2024/03/13/a55-tim-lilac-5.png",
+        "description": "Sở hữu ngay Samsung Galaxy A55 - Chính hãng, đẳng cấp cho mọi trải nghiệm với vẻ ngoài là khung viền kim loại sang trọng, tạo nên phong cách thời thượng cho người dùng. Hệ thống camera sau ấn tượng với camera chính 50MP sắc nét, camera góc siêu rộng 12MP bao trọn mọi khung cảnh, camera macro 5MP khám phá thế giới vi mô và camera trước 32MP cho ảnh selfie lung linh. Hiệu năng mạnh mẽ nhờ chip Exynos 1480 8 nhân, bên cạnh màn hình Super AMOLED cùng độ phân giải Full HD+ 1080 x 2400 cho trải nghiệm giải trí đỉnh cao. Cuối cùng là dung lượng pin lớn lên tới 5000mAh cho thời gian sử dụng thoải mái cả ngày dài.",
+        "producer": "Samsung"
+      },
+      {
+        
+        "name": "Điện thoại POCO X6 5G",
+        "type": "(8GB/256GB) - Chính hãng",
+        "image": "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2024/01/27/poco-x6-5g.png",
+        "description": "Mang đến những cải tiến mới, POCO X6 5G 8GB/256GB sẽ khiến bạn trầm trồ trước sự hài hòa của thiết kế cổ điển và công nghệ hiện đại. Điện thoại được trang bị chipset Qualcomm Snapdragon 7s Gen 2 mạnh mẽ, cho hiệu suất ấn tượng cùng khả năng đa nhiệm hiệu quả. RAM 8GB cùng bộ nhớ 256GB vừa tăng tốc thiết bị với các thao tác vuốt mượt mà, vừa cho không gian lưu trữ rộng lớn. Trải nghiệm người dùng sẽ được nâng tầm cùng màn hình Flow AMOLED 6.67 inch, hỗ trợ hình ảnh với chất lượng 1.5K CrystalRes vô cùng sắc nét. Bộ ba camera 64MP tích hợp công nghệ cố định kép OIS & EIS hứa hẹn bắt trọn từng khoảnh khắc, cho các tấm hình nghệ thuật và bắt mắt.",
+        "producer": "Poco"
+      },
+      {
+        
+        "name": "Điện thoại Redmi Note 13",
+        "type": "(6GB/128GB) - Chính hãng",
+        "image": "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2024/01/04/redmi-note-13.png",
+        "description": "Redmi Note 13 (6GB/128GB) - Chính hãng hứa hẹn là mẫu smartphone nổi bật trong phân khúc giá rẻ tầm trung. Máy được trang bị vi xử lý Snapdragon 685 8 nhân, mang lại hiệu năng ổn định cho mọi tác vụ từ cơ bản đến giải trí nhẹ. Điểm nhấn lớn là bộ ba camera sau với độ phân giải chính lên đến 108 MP, cùng camera selfie 16 MP, đem lại trải nghiệm chụp ảnh đa dạng và chất lượng. Màn hình 6,67 inch AMOLED của thiết bị, với độ phân giải Full HD+ và tần số quét 120 Hz, cung cấp hình ảnh sắc nét, màu sắc tươi sáng và chuyển động mượt mà. Về năng lượng, viên pin dung lượng 5.000 mAh kết hợp cùng khả năng sạc nhanh 33 W.",
+        "producer": "Redmi"
+      },
+      {
+       
+        "name": "Điện thoại Redmi 13C",
+        "type": "(6GB/128GB) - Chính hãng",
+        "image": "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/11/08/xiaomi-redmi-13c-18.png",
+        "description": "Redmi 13C 6GB/128GB - Chính hãng là một chiếc smartphone giá rẻ hấp dẫn của Xiaomi. Sản phẩm này có kích thước 6.71 inch mang tới hiển thị rõ nét. Hiệu năng phần cứng từ chip MediaTek MT6769Z Helio G85. Ngoài ra, bạn có thể tự tin nhiếp ảnh với camera chính có độ phân giải lên đến 50MP. Đồng thời yên tâm sử dụng suốt cả ngày dài với dung lượng pin 5.000 mAh mà hãng cung cấp cho thiết bị.",
+        "producer": "Redmi"
+      },
+      {
+        
+        "name": "Samsung Galaxy A15",
+        "type": "8GB/128GB - Chính hãng",
+        "image": "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/12/14/a15-lte-3.png",
+        "description": "Samsung Galaxy A15 - Chính hãng là sản phẩm vừa mới ra mắt thuộc dòng Galaxy A Series nổi tiếng của thương hiệu Samsung. Sở hữu nhiều cải tiến vượt bậc trong công nghệ cùng vi xử lý MediaTek Helio G99, sản phẩm hứa hẹn mang đến hiệu năng mạnh mẽ, bền bỉ và khả năng tiết kiệm năng lượng hiệu quả. RAM 8GB và dung lượng bộ nhớ lưu trữ lên tới 128GB đi kèm cũng tăng cường sức mạnh cho máy, cải thiện tốc độ xử lý và mang đến không gian lưu trữ rộng lớn. Người dùng sẽ được trải nghiệm các tính năng và phần mềm đa dạng, an toàn trên hệ điều hành One UI 6.0 mới nhất với 4 phiên bản cập nhật và 5 năm cập nhật bảo mật chuẩn EAL5+.",
+        "producer": "Samsung"
+      },
+      {
+      
+        "name": "Điện thoại Infinix NOTE 30",
+        "type": "(8+8GB/256GB) - Chính hãng",
+        "image": "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/10/24/infinix-note-30.png",
+        "description": "Infinix NOTE 30 4G là một chiếc smartphone cao cấp đến từ Infinix sở hữu con chip Mediatek Helio G99 mạnh mẽ, dung lượng lưu trữ lớn và đảm bảo xử lý đa tác vụ với RAM 8GB và bộ nhớ trong lên đến 256GB. Màn hình thiết bị là màn LCD 6.78 inch, tái hiện hình ảnh chân thực và sắc nét hơn với độ phân giải Full HD+ cùng tần số quét 120Hz. Không chỉ vậy, Infinix Note 30 4G còn sở hữu 3 camera siêu chất lượng phục vụ nhu cầu cho người dùng đam mê quay chụp.",
+        "producer": "Infinix"
+      },
+      {
+      
+        "name": "Điện thoại HONOR X7b",
+        "type": "8GB/256GB - Chính hãng",
+        "image": "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2024/03/01/x7b.png",
+        "description": "Thị trường smartphone phân khúc tầm trung có rất nhiều thương hiệu, mẫu mã đa dạng cho người dùng lựa chọn. Trong đó, điện thoại Honor X7b - Chính hãng có với thiết kế bắt mắt, mỏng nhẹ, màu sắc trẻ trung. Nhà sản xuất đã trang bị cho smartphone màn hình lớn 6.8 inch, độ phân giải 1080 x 2412 pixels, cấu hình ổn định với chip Snapdragon 680. Ngoài ra nó còn đi kèm với bộ 3 camera 108MP, camera selfie 8MP, viên pin 6000mAh và khả năng sạc nhanh 35W. ",
+        "producer": "Honor"
+      },
+      {
+      
+        "name": "Điện thoại Redmi Note 13 Pro",
+        "type": "(8GB/128GB) - Chính hãng",
+        "image": "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2024/02/20/redmi-note-13-pro.png",
+        "description": "Redmi Note 13 Pro (8GB/128GB) - Chính hãng xuất hiện mang nhiều ưu điểm về thiết kế, chất lượng vượt xa sự mong đợi của người tiêu dùng. Cụ thể, máy sở hữu hệ thống camera 200MP mạnh mẽ, màn hình kích thước 6.67\", độ phân giải 1080x2400 cùng với công nghệ AMOLED 120Hz hiện đại. Không chỉ vậy, sản phẩm còn mang nhiều ưu điểm nổi bật khác, mời các bạn tiếp tục theo dõi bài viết để có thêm thông tin chi tiết.",
+        "producer": "Infinix"
+      },
+      {
+      
+        "name": "Điện thoại TECNO POVA 5",
+        "type": "(8+8GB/128GB) - Chính hãng",
+        "image": "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/11/22/tecno-pova-5.png",
+        "description": "TECNO POVA 5 thế hệ mới đến từ nhà TECNO là một trong những chiếc smartphone ổn nhất trong phân khúc tầm trung ở thời điểm hiện tại. POVA 5 vừa có hiệu năng mạnh mẽ vừa có màn hình LCD 120Hz, camera 50MP và viên PIN “khủng” 6000mAh. Bên cạnh đó, chiếc smartphone TECNO POVA này còn có thiết kế độc đáo, mang vẻ đẹp tinh tế và hiện đại.",
+        "producer": "Tecno"
       }
+
   ]
   

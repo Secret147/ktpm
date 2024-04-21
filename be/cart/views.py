@@ -4,6 +4,7 @@ from django.http import HttpResponse
 from django.template import loader
 
 from cart.models import Cart
+from customer.models import Customer
 
 
 from django.shortcuts import render
@@ -48,6 +49,7 @@ class ListCartView(APIView):
 
 
 class DetailCart(APIView):
+
     def delete(self, request, id):
         try:
             book = Cart.objects.get(id=id)
@@ -60,7 +62,7 @@ class DetailCart(APIView):
 
     def put(self, request, id):
 
-        cart = Cart.objects.using("mongo").get(id=id)
+        cart = Cart.objects.get(id=id)
         serializer = CartSerializer(cart, data=request.data)
         if serializer.is_valid():
             serializer.save()
@@ -75,4 +77,30 @@ class DetailCart(APIView):
         except Cart.DoesNotExist:
             return Response(
                 {"message": "Cart not found"}, status=status.HTTP_404_NOT_FOUND
+            )
+
+
+class ListCartCustomer(APIView):
+
+    def get(self, request, userid):
+        try:
+            cart_items = Cart.objects.filter(customer_id=userid)
+
+            cart_items_data = list(cart_items.values())
+            cart_items_data.reverse()
+            return JsonResponse(cart_items_data, safe=False)
+        except Cart.DoesNotExist:
+            return JsonResponse(
+                {"message": "No items found for this customer"}, status=404
+            )
+
+
+class CountCartCustomer(APIView):
+    def get(self, request, userid, format=None):
+        try:
+            cart_item_count = Cart.objects.filter(customer_id=userid).count()
+            return JsonResponse({"item_count": cart_item_count}, status=200)
+        except Cart.DoesNotExist:
+            return JsonResponse(
+                {"message": "No items found for this customer"}, status=404
             )

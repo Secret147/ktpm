@@ -4,7 +4,6 @@ import Cookies from 'js-cookie';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import CartItem from '~/components/CartItem';
-import Header from '~/components/Layout/Header';
 
 const cx = classNames.bind(styles);
 function Cart() {
@@ -13,7 +12,7 @@ function Cart() {
     const [checkItem, setCheckitem] = useState(false);
 
     const getProduct = () => {
-        fetch(`http://localhost:8000/api/carts/`)
+        fetch(`http://localhost:8000/api/carts/user/${Cookies.get('userId')}`)
             .then((res) => res.json())
             .then((res) => {
                 setProducts(res);
@@ -61,25 +60,27 @@ function Cart() {
         <>
             {checkItem ? (
                 <div>
-                    <Header></Header>
                     <div className={cx('wrapper')}>
                         <div className={cx('main')}>
                             {products.map((product) => {
+                                console.log(product.book_id);
                                 return (
                                     <CartItem
                                         key={product.id}
                                         onClick={() => deleteProduct(product.id)}
-                                        productId={product.book_id}
-                                        price={product.total}
+                                        bookId={product.book_id}
+                                        mobileId={product.mobile_id}
+                                        clothesId={product.clothes_id}
+                                        total={product.total}
                                     ></CartItem>
                                 );
                             })}
                         </div>
                         <div className={cx('pay')}>
-                            <div className={cx('pay_main')}>
+                            {/* <div className={cx('pay_main')}>
                                 <p>Tổng tiền tạm tính:</p>
                                 <span> {totalpay}</span>
-                            </div>
+                            </div> */}
                             <div className={cx('paid')}>
                                 <Link to={'/formorder'}>
                                     <p>Tiến hành đặt hàng</p>
