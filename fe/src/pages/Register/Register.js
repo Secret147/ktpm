@@ -8,7 +8,7 @@ import { useState } from 'react';
 const cx = classNames.bind(styles);
 
 function Register() {
-    const customerAPI = 'http://localhost:8000/api/customers/';
+    const customerAPI = 'http://localhost:8001/api/customers/';
     const [user, setUser] = useState({
         name: '',
         password: '',

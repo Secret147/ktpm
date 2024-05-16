@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import styles from './OrderItem.module.scss';
 import classNames from 'classnames/bind';
 import Quantity from '../Quantity/Quantity';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRotateRight } from '@fortawesome/free-solid-svg-icons';
 
 const cx = classNames.bind(styles);
 
@@ -11,21 +13,21 @@ function OrderItem({ billId }) {
     const [clothes, setClothes] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:8000/api/orders/book/${billId}`)
+        fetch(`http://localhost:8003/api/orders/book/${billId}`)
             .then((res) => res.json())
             .then((res) => {
                 setProducts(res);
             });
     }, [billId]);
     useEffect(() => {
-        fetch(`http://localhost:8000/api/orders/mobile/${billId}`)
+        fetch(`http://localhost:8003/api/orders/mobile/${billId}`)
             .then((res) => res.json())
             .then((res) => {
                 setMobiles(res);
             });
     }, [billId]);
     useEffect(() => {
-        fetch(`http://localhost:8000/api/orders/clothes/${billId}`)
+        fetch(`http://localhost:8003/api/orders/clothes/${billId}`)
             .then((res) => res.json())
             .then((res) => {
                 setClothes(res);
@@ -57,7 +59,14 @@ function OrderItem({ billId }) {
                     );
                 })
             ) : (
-                <div></div>
+                <div className={cx('training_main')}>
+                    <div className={cx('icon_route_container')}>
+                        <div className={cx('icon-container')}>
+                            <FontAwesomeIcon icon={faRotateRight} />
+                        </div>
+                        <p>Loading...</p>
+                    </div>
+                </div>
             )}
             {mobiles.length > 0 ? (
                 mobiles.map((product) => {

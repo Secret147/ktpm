@@ -1,0 +1,111 @@
+from django.shortcuts import render
+
+from urllib import request, response
+from django.shortcuts import get_object_or_404, render
+from django.http import HttpResponse
+from django.template import loader
+
+from clothes.models import Clothes
+from clothes.serializers import ClothesSerializer
+from django.http import JsonResponse
+
+from rest_framework import status
+from rest_framework import viewsets
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework import generics
+from django.db.models import Q
+
+
+# Create your views here.
+class ListClothesView(APIView):
+
+    def get(self, request, format=None):
+        clothes = Clothes.objects.using("mongo").all()
+        serializer = ClothesSerializer(clothes, many=True)
+
+        return Response(serializer.data)
+
+    def post(self, request):
+        clothes = Clothes.objects.using("mongo").create()
+        serializer = ClothesSerializer(clothes, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return JsonResponse(
+                {"message": "Create a new Clothes successfully"},
+                status=status.HTTP_201_CREATED,
+            )
+        else:
+            return JsonResponse(
+                {"message": "Create a new Clothes unsuccessfully"},
+                status=status.HTTP_400_BAD_REQUEST,
+            )
+
+
+class DetailClothes(APIView):
+    def delete(self, request, id):
+        try:
+            clothes = Clothes.objects.using("mongo").get(id=id)
+            clothes.delete()
+            return Response("Delete Success")
+        except Clothes.DoesNotExist:
+            return Response(
+                {"message": "Cart not found"}, status=status.HTTP_404_NOT_FOUND
+            )
+
+    def put(self, request, id):
+
+        clothes = Clothes.objects.using("mongo").get(id=id)
+        serializer = ClothesSerializer(clothes, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def get(self, request, id):
+        try:
+            clothes = Clothes.objects.using("mongo").get(id=id)
+            serializer = ClothesSerializer(clothes)
+            return Response(serializer.data)
+        except Clothes.DoesNotExist:
+            return Response(
+                {"message": "Clothes not found"}, status=status.HTTP_404_NOT_FOUND
+            )
+
+
+class CreateClothes(APIView):
+    def post(self, request):
+        mobile_list = request.data  # Assume request.data is a list of mobile objects
+        mobile_objects = [
+            Clothes.objects.using("mongo").create(**mobile_data)
+            for mobile_data in mobile_list
+        ]
+
+        try:
+            Clothes.objects.using("mongo").bulk_create(mobile_objects)
+            return JsonResponse(
+                {"message": "Create new mobiles successfully"},
+                status=status.HTTP_201_CREATED,
+            )
+        except Exception as e:
+            return JsonResponse(
+                {"message": f"Create new mobiles unsuccessfully: {str(e)}"},
+                status=status.HTTP_400_BAD_REQUEST,
+            )
+class ClothesViewSet(generics.ListAPIView):
+    serializer_class = ClothesSerializer
+
+    def get_queryset(self):
+        queryset = Clothes.objects.using("mongo").all()
+        keywords = self.request.query_params.get("keywords")
+        if keywords:
+
+            query = Q()
+            for keyword in keywords.split():
+
+                query |= Q(name__icontains=keyword)
+                query |= Q(image__icontains=keyword)
+                query |= Q(style__icontains=keyword)
+                query |= Q(description__icontains=keyword)
+            queryset = queryset.filter(query)
+        return queryset

@@ -12,7 +12,7 @@ function Cart() {
     const [checkItem, setCheckitem] = useState(false);
 
     const getProduct = () => {
-        fetch(`http://localhost:8000/api/carts/user/${Cookies.get('userId')}`)
+        fetch(`http://localhost:8002/api/carts/user/${Cookies.get('userId')}`)
             .then((res) => res.json())
             .then((res) => {
                 setProducts(res);
@@ -25,7 +25,7 @@ function Cart() {
                 'Content-type': 'application/json',
             },
         };
-        const deleteAPI = `http://localhost:8000/api/carts/${productId}`;
+        const deleteAPI = `http://localhost:8002/api/carts/${productId}`;
         const response = await fetch(deleteAPI, fetchOptions);
         if (response.ok) {
             getProduct();

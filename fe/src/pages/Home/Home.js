@@ -18,7 +18,7 @@ function Home() {
     const [check, setCheck] = useState(true);
 
     const fetchData = () => {
-        fetch(`http://localhost:8000/api/books/`)
+        fetch(`http://localhost:8008/api/books/`)
             .then((res) => res.json())
             .then((res) => {
                 setProducts(res);

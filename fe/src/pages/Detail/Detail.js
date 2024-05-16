@@ -17,19 +17,19 @@ function Detail() {
     useEffect(() => {
         const type = localStorage.getItem('type');
         if (type === 'mobile') {
-            fetch(`http://localhost:8000/api/mobiles/${id}`)
+            fetch(`http://localhost:8008/api/mobiles/${id}`)
                 .then((res) => res.json())
                 .then((res) => {
                     setProduct(res);
                 });
         } else if (type === 'clothes') {
-            fetch(`http://localhost:8000/api/clothes/${id}`)
+            fetch(`http://localhost:8008/api/clothes/${id}`)
                 .then((res) => res.json())
                 .then((res) => {
                     setProduct(res);
                 });
         } else {
-            fetch(`http://localhost:8000/api/books/${id}`)
+            fetch(`http://localhost:8008/api/books/${id}`)
                 .then((res) => res.json())
                 .then((res) => {
                     setProduct(res);
@@ -72,7 +72,7 @@ function Detail() {
                 },
                 body: JSON.stringify(dataD),
             };
-            const response = await fetch(`http://127.0.0.1:8000/api/carts/`, fetchOptions);
+            const response = await fetch(`http://127.0.0.1:8002/api/carts/`, fetchOptions);
             if (response.ok) {
                 alert('Success');
                 window.location.href = 'cart';

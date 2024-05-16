@@ -3,6 +3,7 @@ import classNames from 'classnames/bind';
 
 import { useEffect, useState } from 'react';
 import Button from '~/components/Button/Button';
+import OrderItem from '~/components/OrderItem';
 
 const cx = classNames.bind(styles);
 
@@ -11,7 +12,7 @@ function Bill() {
     const [checkEdit, setCheckEdit] = useState(false);
     const [bill, setBill] = useState([]);
     const getAll = () => {
-        fetch('http://localhost:8000/api/orders/')
+        fetch('http://localhost:8003/api/orders/')
             .then((res) => res.json())
             .then((res) => {
                 setBills(res);
@@ -23,7 +24,7 @@ function Bill() {
     }, []);
     const openBill = (id) => {
         setCheckEdit(true);
-        fetch(`http://localhost:8000/api/orders/${id}`)
+        fetch(`http://localhost:8003/api/orders/${id}`)
             .then((res) => res.json())
             .then((res) => {
                 setBill(res);
@@ -41,18 +42,25 @@ function Bill() {
             <div className={cx('main')}>
                 <div className={cx('header')}>
                     <div className={cx('header_main')}>
-                        <p>Quản lý sản phẩm</p>
+                        <p>Quản lý hóa đơn</p>
                     </div>
                     {checkEdit ? (
                         <div className={cx('add_account')}>
                             <div className={cx('add_account_main')}>
+                                <p>Khách hàng: {bill.name}</p>
                                 <p>Email: {bill.email}</p>
-                                <p>Địa chỉ: {bill.address} </p>
+                                <p>Địa chỉ nhận hàng: {bill.address} </p>
                                 <p>Số điện thoại khách hàng: {bill.numberphone} </p>
                                 <p>Phương thức nhận hàng: {bill.method} </p>
-                                <p>Hóa đơn: {bill.bill} </p>
+                                {/* <p>Hóa đơn: {bill.bill} </p> */}
+                                <p>Ngày tạo: {bill.created_at} </p>
                                 <p>Ghi chú: {bill.note} </p>
+                                <p>Danh sách sản phẩm:</p>
+                                <div className={cx('list_product')}>
+                                    <OrderItem billId={bill.id}></OrderItem>
+                                </div>
                             </div>
+
                             <div className={cx('button')}>
                                 <div className={cx('accept2')}>
                                     <Button normal large onClick={closeBill}>

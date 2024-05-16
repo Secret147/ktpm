@@ -15,6 +15,45 @@
     border-radius: var(--border-task);
     background-color: white;
 }
+.icon-container {
+    display: inline-block; /* Đảm bảo biểu tượng được hiển thị theo chiều ngang */
+    animation: spin 2s linear infinite; /* Áp dụng hiệu ứng xoay */
+    font-size: 32px;
+    color: var(--primary);
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg); /* Góc xoay ban đầu */
+    }
+    100% {
+        transform: rotate(360deg); /* Góc xoay sau một vòng xoay đầy đủ (360 độ) */
+    }
+}
+.training_main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.icon_route_container {
+    width: 100%;
+    height: 100%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    p {
+        color: var(--primary);
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+.icon-container_success {
+    display: inline-block;
+    font-size: 48px;
+    color: var(--border);
+}
 .header {
     font-size: 2.4rem;
     font-weight: 700;

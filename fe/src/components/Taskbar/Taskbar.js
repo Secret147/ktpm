@@ -29,7 +29,7 @@ function Taskbar({ setProducts, onClick }) {
                     icon={faBook}
                     name="Sách"
                     onClick={() => {
-                        fetchProduct('http://localhost:8000/api/books/');
+                        fetchProduct('http://localhost:8008/api/books/');
                         localStorage.setItem('type', 'book');
                     }}
                 />
@@ -37,7 +37,7 @@ function Taskbar({ setProducts, onClick }) {
                     icon={faMobile}
                     name="Điện thoại"
                     onClick={() => {
-                        fetchProduct('http://localhost:8000/api/mobiles/');
+                        fetchProduct('http://localhost:8008/api/mobiles/');
                         localStorage.setItem('type', 'mobile');
                     }}
                 />
@@ -45,7 +45,7 @@ function Taskbar({ setProducts, onClick }) {
                     icon={faShirt}
                     name="Quần áo"
                     onClick={() => {
-                        fetchProduct('http://localhost:8000/api/clothes/');
+                        fetchProduct('http://localhost:8008/api/clothes/');
                         localStorage.setItem('type', 'clothes');
                     }}
                 />

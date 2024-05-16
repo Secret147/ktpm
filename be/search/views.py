@@ -29,6 +29,7 @@ class BookViewSet(generics.ListAPIView):
     def get_queryset(self):
         queryset = Book.objects.using("mongo").all()
         keywords = self.request.query_params.get("keywords")
+        print(keywords)
         if keywords:
 
             query = Q()

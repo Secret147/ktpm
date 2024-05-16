@@ -49,7 +49,7 @@ function Header() {
     }, []);
     useEffect(() => {
         if (Cookies.get('user')) {
-            fetch(`http://localhost:8000/api/carts/count/${Cookies.get('userId')}`)
+            fetch(`http://localhost:8002/api/carts/count/${Cookies.get('userId')}`)
                 .then((res) => res.json())
                 .then((res) => {
                     setCount(res.item_count);
@@ -61,7 +61,7 @@ function Header() {
     useEffect(() => {
         // Gọi API tìm kiếm khi input thay đổi, áp dụng debounce 500ms
         const searchDebounced = debounce((searchText) => {
-            fetch(`http://127.0.0.1:8000/api/searchs/book/?keywords=${input}`)
+            fetch(`http://127.0.0.1:8009/api/searchs/book/?keywords=${input}`)
                 .then((res) => res.json())
                 .then((res) => {
                     setProducts(res);
@@ -81,7 +81,7 @@ function Header() {
     useEffect(() => {
         // Gọi API tìm kiếm khi input thay đổi, áp dụng debounce 500ms
         const searchDebounced = debounce((searchText) => {
-            fetch(`http://127.0.0.1:8000/api/searchs/mobile/?keywords=${input}`)
+            fetch(`http://127.0.0.1:8009/api/searchs/mobile/?keywords=${input}`)
                 .then((res) => res.json())
                 .then((res) => {
                     setMobiles(res);
@@ -101,7 +101,7 @@ function Header() {
     useEffect(() => {
         // Gọi API tìm kiếm khi input thay đổi, áp dụng debounce 500ms
         const searchDebounced = debounce((searchText) => {
-            fetch(`http://127.0.0.1:8000/api/searchs/clothes/?keywords=${input}`)
+            fetch(`http://127.0.0.1:8009/api/searchs/clothes/?keywords=${input}`)
                 .then((res) => res.json())
                 .then((res) => {
                     setClothes(res);

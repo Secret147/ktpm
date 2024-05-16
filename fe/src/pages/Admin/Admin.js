@@ -25,7 +25,7 @@ function Admin() {
         role: '',
     });
     const getAll = () => {
-        fetch('http://localhost:8000/api/customers/')
+        fetch('http://localhost:8001/api/customers/')
             .then((res) => res.json())
             .then((res) => {
                 setCustomers(res);
@@ -42,7 +42,7 @@ function Admin() {
                 'Content-type': 'application/json',
             },
         };
-        const response = await fetch(`http://localhost:8000/api/customers/${id}`, fetchOptions);
+        const response = await fetch(`http://localhost:8001/api/customers/${id}`, fetchOptions);
         if (response.ok) {
             alert('Success');
             getAll();
@@ -58,7 +58,7 @@ function Admin() {
             },
             body: JSON.stringify(eUser),
         };
-        const response = await fetch(`http://localhost:8000/api/customers/${id}`, fetchOptions);
+        const response = await fetch(`http://localhost:8001/api/customers/${id}`, fetchOptions);
         if (response.ok) {
             alert('Success');
             getAll();
@@ -77,7 +77,7 @@ function Admin() {
     };
     const turnEdit = (userid) => {
         setCheckEdit(true);
-        fetch(`http://localhost:8000/api/customers/${userid}`)
+        fetch(`http://localhost:8001/api/customers/${userid}`)
             .then((res) => res.json())
             .then((res) => {
                 setEUser(res);
@@ -102,7 +102,7 @@ function Admin() {
             },
             body: JSON.stringify(newUser),
         };
-        const response = await fetch('http://localhost:8000/api/customers/', fetchOptions);
+        const response = await fetch('http://localhost:8001/api/customers/', fetchOptions);
         if (response.ok) {
             alert('Success');
             getAll();

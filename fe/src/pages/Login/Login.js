@@ -9,7 +9,7 @@ import Form from '~/components/Form/Form';
 const cx = classNames.bind(styles);
 
 function Login() {
-    const loginAPI = 'http://localhost:8000/api/customers/login/';
+    const loginAPI = 'http://localhost:8001/api/customers/login/';
     const [customer, setCustomer] = useState({
         username: '',
         password: '',

@@ -58,21 +58,21 @@ function Product() {
     });
 
     const getAllMobile = () => {
-        fetch('http://localhost:8000/api/mobiles/')
+        fetch('http://localhost:8008/api/mobiles/')
             .then((res) => res.json())
             .then((res) => {
                 setMobiles(res);
             });
     };
     const getAllClothes = () => {
-        fetch('http://localhost:8000/api/clothes/')
+        fetch('http://localhost:8008/api/clothes/')
             .then((res) => res.json())
             .then((res) => {
                 setClothes(res);
             });
     };
     const getAll = () => {
-        fetch('http://localhost:8000/api/books/')
+        fetch('http://localhost:8008/api/books/')
             .then((res) => res.json())
             .then((res) => {
                 setProducts(res);
@@ -91,7 +91,7 @@ function Product() {
                 'Content-type': 'application/json',
             },
         };
-        const response = await fetch(`http://localhost:8000/api/books/${id}`, fetchOptions);
+        const response = await fetch(`http://localhost:8008/api/books/${id}`, fetchOptions);
         if (response.ok) {
             alert('Success');
             getAll();
@@ -106,7 +106,7 @@ function Product() {
                 'Content-type': 'application/json',
             },
         };
-        const response = await fetch(`http://localhost:8000/api/mobiles/${id}`, fetchOptions);
+        const response = await fetch(`http://localhost:8008/api/mobiles/${id}`, fetchOptions);
         if (response.ok) {
             alert('Success');
             getAllMobile();
@@ -121,7 +121,7 @@ function Product() {
                 'Content-type': 'application/json',
             },
         };
-        const response = await fetch(`http://localhost:8000/api/clothes/${id}`, fetchOptions);
+        const response = await fetch(`http://localhost:8008/api/clothes/${id}`, fetchOptions);
         if (response.ok) {
             alert('Success');
             getAllClothes();
@@ -137,7 +137,7 @@ function Product() {
             },
             body: JSON.stringify(eProduct),
         };
-        const response = await fetch(`http://localhost:8000/api/books/${id}`, fetchOptions);
+        const response = await fetch(`http://localhost:8008/api/books/${id}`, fetchOptions);
         if (response.ok) {
             alert('Success');
             getAll();
@@ -160,7 +160,7 @@ function Product() {
             },
             body: JSON.stringify(eMobile),
         };
-        const response = await fetch(`http://localhost:8000/api/mobiles/${id}`, fetchOptions);
+        const response = await fetch(`http://localhost:8008/api/mobiles/${id}`, fetchOptions);
         if (response.ok) {
             alert('Success');
             getAllMobile();
@@ -184,7 +184,7 @@ function Product() {
             },
             body: JSON.stringify(eClothes),
         };
-        const response = await fetch(`http://localhost:8000/api/clothes/${id}`, fetchOptions);
+        const response = await fetch(`http://localhost:8008/api/clothes/${id}`, fetchOptions);
         if (response.ok) {
             alert('Success');
             getAllClothes();
@@ -235,7 +235,7 @@ function Product() {
         setCheckEdit(true);
         setCheckEditMobile(false);
         setCheckEditClothes(false);
-        fetch(`http://localhost:8000/api/books/${productid}`)
+        fetch(`http://localhost:8008/api/books/${productid}`)
             .then((res) => res.json())
             .then((res) => {
                 seteProduct(res);
@@ -246,7 +246,7 @@ function Product() {
         setCheckEditMobile(true);
         setCheckEdit(false);
         setCheckAddClothes(false);
-        fetch(`http://localhost:8000/api/mobiles/${productid}`)
+        fetch(`http://localhost:8008/api/mobiles/${productid}`)
             .then((res) => res.json())
             .then((res) => {
                 seteMobile(res);
@@ -257,7 +257,7 @@ function Product() {
         setCheckEditClothes(true);
         setCheckEdit(false);
         setCheckEditMobile(false);
-        fetch(`http://localhost:8000/api/clothes/${productid}`)
+        fetch(`http://localhost:8008/api/clothes/${productid}`)
             .then((res) => res.json())
             .then((res) => {
                 seteClothes(res);
@@ -324,7 +324,7 @@ function Product() {
             },
             body: JSON.stringify(newProduct),
         };
-        const response = await fetch('http://localhost:8000/api/books/', fetchOptions);
+        const response = await fetch('http://localhost:8008/api/books/', fetchOptions);
         if (response.ok) {
             alert('Add Book Success');
             getAll();
@@ -348,7 +348,7 @@ function Product() {
             },
             body: JSON.stringify(mobile),
         };
-        const response = await fetch('http://localhost:8000/api/mobiles/', fetchOptions);
+        const response = await fetch('http://localhost:8008/api/mobiles/', fetchOptions);
         if (response.ok) {
             alert('Add Mobile Success');
             getAllMobile();
@@ -365,7 +365,7 @@ function Product() {
             },
             body: JSON.stringify(clothe),
         };
-        const response = await fetch('http://localhost:8000/api/clothes/', fetchOptions);
+        const response = await fetch('http://localhost:8008/api/clothes/', fetchOptions);
         if (response.ok) {
             alert('Add Clothes Success');
             getAllClothes();

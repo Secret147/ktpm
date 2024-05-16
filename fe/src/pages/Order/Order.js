@@ -11,7 +11,7 @@ function Order() {
     const [bills, setBills] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:8000/api/orders/user/${Cookies.get('userId')}`)
+        fetch(`http://localhost:8003/api/orders/user/${Cookies.get('userId')}`)
             .then((res) => res.json())
             .then((res) => {
                 setBills(res);
@@ -32,7 +32,7 @@ function Order() {
                 'Content-type': 'application/json',
             },
         };
-        const response = await fetch(`http://localhost:8000/api/orders/${billId}`, fetchOptions);
+        const response = await fetch(`http://localhost:8003/api/orders/${billId}`, fetchOptions);
         if (response.ok) {
             window.location.reload();
         } else {

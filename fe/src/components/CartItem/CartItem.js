@@ -10,19 +10,19 @@ function CartItem({ onClick, total, bookId, mobileId, clothesId }) {
     const [book, setBook] = useState([]);
     const getProduct = () => {
         if (bookId === null && clothesId === null) {
-            fetch(`http://127.0.0.1:8000/api/mobiles/${mobileId}`)
+            fetch(`http://127.0.0.1:8008/api/mobiles/${mobileId}`)
                 .then((res) => res.json())
                 .then((res) => {
                     setBook(res);
                 });
         } else if (bookId === null && mobileId === null) {
-            fetch(`http://127.0.0.1:8000/api/clothes/${clothesId}`)
+            fetch(`http://127.0.0.1:8008/api/clothes/${clothesId}`)
                 .then((res) => res.json())
                 .then((res) => {
                     setBook(res);
                 });
         } else {
-            fetch(`http://127.0.0.1:8000/api/books/${bookId}`)
+            fetch(`http://127.0.0.1:8008/api/books/${bookId}`)
                 .then((res) => res.json())
                 .then((res) => {
                     setBook(res);
